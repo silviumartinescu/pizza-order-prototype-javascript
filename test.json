@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Quattro Stagioni",
+    "qty": 2,
+    "totalPrice": 74,
+    "img": "http://127.0.0.1:8000/quattro_stagioni.jpg"
+  },
+  {
+    "name": "Carbonara",
+    "qty": 2,
+    "totalPrice": 76,
+    "img": "http://127.0.0.1:8000/carbonara.jpg"
+  },
+  {
+    "name": "Rustica",
+    "qty": 1,
+    "totalPrice": 42,
+    "img": "http://127.0.0.1:8000/rustica.jpg"
+  }
+]

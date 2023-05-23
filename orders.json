@@ -1,0 +1,29 @@
+{
+  "order": [
+    {
+      "name": "Quattro Stagioni",
+      "qty": 2,
+      "totalPrice": 74,
+      "img": "http://127.0.0.1:8000/quattro_stagioni.jpg"
+    },
+    {
+      "name": "Carbonara",
+      "qty": 2,
+      "totalPrice": 76,
+      "img": "http://127.0.0.1:8000/carbonara.jpg"
+    },
+    {
+      "name": "Rustica",
+      "qty": 1,
+      "totalPrice": 42,
+      "img": "http://127.0.0.1:8000/rustica.jpg"
+    }
+  ],
+  "cardNumber": "1234",
+  "cardHolder": "Mr Smith",
+  "expires": "24/03",
+  "cvc": "725",
+  "email": "m@yahoo.com",
+  "address": "Nowhere Street",
+  "time": "10:29 2022-10-28"
+}

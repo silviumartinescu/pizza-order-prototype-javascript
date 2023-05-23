@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+        body {
+            zoom: 80%;
+            font-family: 'Amatic SC', cursive;
+            background-color: #111111;
+            color: #e1985d;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        p {
+            font-size: 3em;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            opacity: 0;
+
+        }
+
+        .text {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            display: table;
+        }
+
+        .t1 {
+            animation: t-animation 6s;
+
+        }
+
+        .t2 {
+            animation: t-animation 6s;
+
+            animation-delay: 6s;
+        }
+
+        .end {
+            animation: end-animation 2s;
+            animation-delay: 12s;
+            animation-fill-mode: forwards;
+        }
+
+        .flicker {
+            animation: flicker 12s infinite;
+        }
+
+        @keyframes t-animation {
+            0% {
+                opacity: 0;
+            }
+
+            30% {
+                opacity: 1;
+            }
+
+            70% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes end-animation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes flicker {
+            40.1% {
+                left: 0px;
+                top: 0px;
+            }
+
+            40.2% {
+                left: 10px;
+                top: 8px;
+            }
+
+            40.3% {
+                left: 0px;
+                top: 0px;
+            }
+
+            90.1% {
+                left: 0px;
+                top: 0px;
+            }
+
+            90.2% {
+                left: -5px;
+                top: 3px;
+            }
+
+            90.3% {
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        .blob-effect {
+
+            width: 200px;
+            height: 200px;
+            transform: translateY(750px) translateX(1750px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: flicker 12s infinite;
+        }
+
+        .blob-effect span:nth-child(1) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid#e1985d;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: rotate-blob 5s linear infinite;
+        }
+
+        .blob-effect:hover span:nth-child(1) {
+            background: linear-gradient(to bottom, #e1985d, #e30f00);
+            border: none;
+        }
+
+        .blob-effect span:nth-child(2) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid#e1985d;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: rotate-blob 4s linear infinite;
+        }
+
+        .blob-effect:hover span:nth-child(2) {
+            background: linear-gradient(to bottom, #e1985d, #e30f00);
+            border: none;
+        }
+
+        .blob-effect span:nth-child(3) {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid#e1985d;
+            border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+            transition: 0.5s;
+            animation: rotate-blob2 10s linear infinite;
+        }
+
+        .blob-effect:hover span:nth-child(3) {
+            background: linear-gradient(to bottom, #e1985d, #e30f00);
+            border: none;
+        }
+
+        @keyframes rotate-blob {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-blob2 {
+            0% {
+                transform: rotate(360deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
+        .div-container {
+            position: relative;
+            padding: 40px 60px;
+            font-size: 25px;
+            color: #fff;
+            text-shadow: 1px 1px 1px black;
+            text-align: center;
+            transition: 0.5s;
+            z-index: 10000;
+        }
+
+        .div-container p {
+
+            color: #e1985d;
+        }
+
+        .div-container a {
+
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+
+            padding: 6px 18px;
+            text-decoration: none;
+            color: #e1985d;
+            font-weight: 600;
+            border-radius: 73% 27% 44% 56% / 49% 44% 56% 51%;
+        }
+
+        .div-container a:hover {
+
+            background: linear-gradient(to bottom, #a51313, #971f17);
+        }
+
+
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            height: 110vh;
+            width: 700px;
+            transform: translateX(820px) translateY(100px);
+            perspective: 800px;
+            perspective-origin: 50% 50px;
+            transition-duration: 5s;
+
+        }
+
+        .cube {
+            perspective: 800px;
+            perspective-origin: 50% 50px;
+            transition-duration: 5s;
+            margin-bottom: 100px;
+            position: relative;
+            width: 200px;
+            height: 30px;
+            transform-style: preserve-3d;
+        }
+
+        .cube div {
+            background-size: cover;
+            background-position: center center;
+            opacity: 1;
+            position: absolute;
+            width: 200px;
+            box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .cube .bottom {
+            box-shadow: inset 0px 0px 30px 10px rgba(0, 0, 0, 0.5), 0px 0px 100px 46px rgba(0, 0, 0, 0.5);
+        }
+
+        .back {
+            background: url(http://img04.deviantart.net/c516/i/2010/243/c/1/cardboard_texture_stock_by_ymntlestock-d2xpf3o.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 20px;
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+
+        .right {
+            background: url(http://img04.deviantart.net/c516/i/2010/243/c/1/cardboard_texture_stock_by_ymntlestock-d2xpf3o.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 20px;
+            transform: rotateY(-270deg) translateX(100px);
+            transform-origin: top right;
+        }
+
+        .left {
+            background: url(http://img04.deviantart.net/c516/i/2010/243/c/1/cardboard_texture_stock_by_ymntlestock-d2xpf3o.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 20px;
+            transform: rotateY(270deg) translateX(-100px);
+            transform-origin: center left;
+        }
+
+        .bottom {
+            background: url(https://s4.postimg.org/lxbef91jh/Untitled_1.png);
+            background-size: cover;
+            background-position: center center;
+            height: 200px;
+            transform: rotateX(90deg) translateY(100px) translatez(180px);
+            transform-origin: bottom center;
+        }
+
+        .front {
+            background: url(http://img04.deviantart.net/c516/i/2010/243/c/1/cardboard_texture_stock_by_ymntlestock-d2xpf3o.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 20px;
+            transform: translateZ(100px);
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotateY(0);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+        .top {
+            background: url(https://c1.staticflickr.com/3/2086/1708859998_568d2a8335_b.jpg);
+            background-size: cover;
+            background-position: center center;
+            height: 200px;
+            transform: translateZ(-100px) rotateX(90deg);
+            transform-origin: top center;
+            transition-duration: 2s;
+        }
+
+        .bigcube {
+            position: relative;
+            width: 150px;
+            height: 550px;
+            transform-style: preserve-3d;
+            transform: rotatey(150deg);
+            animation: spin 10s infinite linear;
+        }
+
+        .bigcube:hover .top {
+            transform-origin: top center;
+            transform: translateZ(-100px) rotateX(120deg);
+        }
+
+        .bigcube:hover .top2 {
+            transform-origin: top center;
+            transform: translateZ(-100px) rotateX(120deg) rotatez(180deg) translateY(-200px);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class="text flicker">
+            <p class="t1">Once upon a time</p>
+        </div>
+        <div class="text flicker">
+            <p class="t2">4 guys had to make some code come true</p>
+        </div>
+        <div class="text flicker">
+            <p class="end">prepare for hunger</p>
+        </div>
+        <div class="blob-effect">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="div-container">
+                <a href="http://127.0.0.1:8000/menu">Click here</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="bigcube">
+                <div class="cube">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                    <div class="top"></div>
+
+                    <div class="bottom"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
+                </div>
+
+            </div>
+
+
+</body>
+
+</html>

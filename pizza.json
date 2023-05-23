@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1,
+    "name": "Capriciosa",
+    "ingredients": [
+      "Tomato sauce",
+      "mozzarella",
+      "prosciutto cotto",
+      "mushrooms",
+      "artichokes",
+      "black olives",
+      "capers",
+      "anchovies"
+    ],
+    "price": 40,
+    "image": "capric.jpg",
+    "allergens": [1, 4, 2]
+  },
+  {
+    "id": 2,
+    "name": "Carbonara",
+    "ingredients": [
+      "White sauce",
+      "garlic",
+      "mozzarella",
+      "smoked bacon",
+      "egg",
+      "parmesan"
+    ],
+    "price": 38,
+    "image": "carbonara.jpg",
+    "allergens": [1, 5, 7]
+  },
+  {
+    "id": 3,
+    "name": "Diavola",
+    "ingredients": [
+      "White sauce",
+      "garlic",
+      "mozzarella",
+      "smoked bacon",
+      "egg",
+      "parmesan"
+    ],
+    "price": 37,
+    "image": "diavola.jpg",
+    "allergens": [2, 4, 6]
+  },
+  {
+    "id": 4,
+    "name": "Margherita",
+    "ingredients": ["Tomato sauce", "mozzarella", "basil"],
+    "price": 29,
+    "image": "margherita.jpg",
+    "allergens": [7, 6, 1]
+  },
+  {
+    "id": 5,
+    "name": "Quattro Stagioni",
+    "ingredients": [
+      "Tomato sauce",
+      "mozzarella",
+      "prosciutto cotto",
+      "mushrooms",
+      "artichokes",
+      "black olives"
+    ],
+    "price": 37,
+    "image": "quattro_stagioni.jpg",
+    "allergens": [1, 3, 6]
+  },
+  {
+    "id": 6,
+    "name": "Vegetariana",
+    "ingredients": [
+      "Tomato sauce",
+      "mozzarella",
+      "mushrooms",
+      "eggplant",
+      "capsicum",
+      "onion",
+      "black olives"
+    ],
+    "price": 35,
+    "image": "vegetariana.jpg",
+    "allergens": [2, 5, 7]
+  },
+  {
+    "id": 7,
+    "name": "Prosciutto Crudo",
+    "ingredients": [
+      "Tomato sauce",
+      "mozzarella",
+      "prosciutto crudo",
+      "rucola",
+      "cherry tomatoes",
+      "parmesan"
+    ],
+    "price": 40,
+    "image": "crudo_e_rucola.jpg",
+    "allergens": [1, 6, 7]
+  },
+  {
+    "id": 8,
+    "name": "Rustica",
+    "ingredients": [
+      "Tomato sauce",
+      "mozzarella",
+      "smoked bacon",
+      "onion",
+      "capsicum",
+      "cheese",
+      "egg"
+    ],
+    "price": 42,
+    "image": "rustica.jpg",
+    "allergens": [1, 7, 3]
+  },
+  {
+    "id": 9,
+    "name": "Al tonno e cipola",
+    "ingredients": ["Tomato sauce", "mozzarella", "tunna", "onion"],
+    "price": 35,
+    "image": "tonno.jpg",
+    "allergens": [3, 5, 6]
+  },
+  {
+    "id": 10,
+    "name": "Cosa Nostra",
+    "ingredients": [
+      "Tomato sauce",
+      "mozzarella",
+      "smoked bacon",
+      "spianata picantă",
+      "gorgonzola",
+      "chilli pepper",
+      "artichokes"
+    ],
+    "price": 41,
+    "image": "casa_nostra.jpg",
+    "allergens": [4, 6, 7]
+  }
+]

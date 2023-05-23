@@ -1,0 +1,24 @@
+{
+  "name": "pizza-order-prototype-javascript-silviumartinescu",
+  "version": "1.0.0",
+  "description": "No starter code is provided. Start from scratch!",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodecoolGlobal/pizza-order-prototype-javascript-silviumartinescu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodecoolGlobal/pizza-order-prototype-javascript-silviumartinescu/issues"
+  },
+  "homepage": "https://github.com/CodecoolGlobal/pizza-order-prototype-javascript-silviumartinescu#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.2.10"
+  }
+}

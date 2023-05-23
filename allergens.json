@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "gluten"
+  },
+  {
+    "id": 2,
+    "name": "peanuts"
+  },
+  {
+    "id": 3,
+    "name": "soy"
+  },
+  {
+    "id": 4,
+    "name": "fish"
+  },
+  {
+    "id": 5,
+    "name": "crustaceans and molusks"
+  },
+  {
+    "id": 6,
+    "name": "milk"
+  },
+  {
+    "id": 7,
+    "name": "eggs"
+  }
+]
